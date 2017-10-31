@@ -225,10 +225,11 @@ section#section-gallery
 			box-shadow: 2px 2px 5px rgba(0,0,0,0.2)
 			cursor: pointer
 			appearance: none
-
 			background: url('../images/arrows.png') no-repeat 90% 0 #fff
 			&:focus
 				outline: none
+			option
+				font-size: 12px
 	.section-gallery__container
 		padding: 20px 0px
 		.col-lg-3.col-md-4.col-xs-6
@@ -350,7 +351,8 @@ section#section-gallery
 				text-align: center
 			p
 				+size(100%, 75px)
-				overflow: scroll
+				overflow-y: scroll
+				overflow-x: hidden
 				color: black
 		.gallery_modal_rightBar
 			color: $color_primary

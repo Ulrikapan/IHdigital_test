@@ -213,6 +213,8 @@ section#section-gallery .section-gallery__filter {
     background: url("../images/arrows.png") no-repeat 90% 0 #fff; }
     section#section-gallery .section-gallery__filter select:focus {
       outline: none; }
+    section#section-gallery .section-gallery__filter select option {
+      font-size: 12px; }
 
 section#section-gallery .section-gallery__container {
   padding: 20px 0px; }
@@ -335,7 +337,8 @@ section#section-gallery .section-gallery__container {
       #galleryModal:target .gallery_modal-container .gallery_modal_content p {
         width: 100%;
         height: 75px;
-        overflow: scroll;
+        overflow-y: scroll;
+        overflow-x: hidden;
         color: black; }
     #galleryModal:target .gallery_modal-container .gallery_modal_rightBar {
       color: #41B032;
